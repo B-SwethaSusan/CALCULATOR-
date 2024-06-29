@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-box">
+            <h2 style="text-align: center; color: rgb(192, 27, 123); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">CALCULATOR</h2>
+            <input type="text" id="display" class="form-control input-display" readonly>
+            <div class="buttons">
+                <button class="btn btn-secondary" onclick="clearDisplay()"><b>AC</b></button>
+                <button class="btn btn-secondary" onclick="appendOperator('%')"><b>%</b></button>
+                <button class="btn btn-secondary" onclick="square()"><b>x²</b></button>
+                <button class="btn btn-secondary" onclick="appendOperator('/')"><b>/</b></button>
+                <button class="btn btn-light" onclick="appendNumber(7)"><b>7</b></button>
+                <button class="btn btn-light" onclick="appendNumber(8)"><b>8</b></button>
+                <button class="btn btn-light" onclick="appendNumber(9)"><b>9</b></button>
+                <button class="btn btn-secondary" onclick="appendOperator('*')"><b>*</b></button>
+                <button class="btn btn-light" onclick="appendNumber(4)"><b>4</b></button>
+                <button class="btn btn-light" onclick="appendNumber(5)"><b>5</b></button>
+                <button class="btn btn-light" onclick="appendNumber(6)"><b>6</b></button>
+                <button class="btn btn-secondary" onclick="appendOperator('-')"><b>-</b></button>
+                <button class="btn btn-light" onclick="appendNumber(1)"><b>1</b></button>
+                <button class="btn btn-light" onclick="appendNumber(2)"><b>2</b></button>
+                <button class="btn btn-light" onclick="appendNumber(3)"><b>3</b></button>
+                <button class="btn btn-secondary" onclick="appendOperator('+')"><b>+</b></button>
+                <button class="btn btn-light" onclick="appendNumber(0)"><b>0</b></button>
+                <button class="btn btn-light" onclick="appendNumber('.')"><b>.</b></button>
+                <button class="btn btn-secondary" onclick="appendOperator('(')"><b>(</b></button>
+                <button class="btn btn-secondary" onclick="appendOperator(')')"><b>)</b></button>
+                <button class="btn btn-secondary" onclick="deleteLast()"><b>⌫</b></button>
+                <button class="btn btn-primary" onclick="calculate()"><b>=</b></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="minjor.js"></script>
+</body>
+</html>
